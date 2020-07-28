@@ -18,6 +18,6 @@ public class AuthenticationController {
     @GetMapping(value = "/token")
     public AuthenticationResponse getAuthenticationResponse(@RequestParam(name = "location") String encryptedLocation) {
 
-        return authenticationService.getAuthencationResponse(encryptedLocation);
+        return authenticationService.getAuthenticationResponse(encryptedLocation);
     }
 }

@@ -3,3 +3,7 @@ spring:
     name: aa-ct-change-reshop-reissue
 server:
   port : 8080
+jwt:
+  secret: secret
+  timeout: 900000
+  username: cav
