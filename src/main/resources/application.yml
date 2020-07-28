@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: aa-ct-change-reshop-reissue
+server:
+  port : 8080
