@@ -20,4 +20,10 @@ public class AuthenticationController {
 
         return authenticationService.getAuthenticationResponse(encryptedLocation);
     }
+
+    @GetMapping(value = "/token/verify")
+    public Boolean verifyToken(@RequestParam(name = "token") String token) throws Exception {
+
+        return authenticationService.validateToken(token);
+    }
 }
