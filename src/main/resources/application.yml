@@ -1,9 +1,9 @@
 spring:
   application:
-    name: aa-ct-change-reshop-reissue
+    name: edge-authserver
 server:
   port : 8080
 jwt:
   secret: secret
-  timeout: 900000
+  timeout: 1500000
   username: cav

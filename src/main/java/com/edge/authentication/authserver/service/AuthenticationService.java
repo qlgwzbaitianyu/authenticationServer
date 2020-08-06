@@ -20,7 +20,7 @@ public class AuthenticationService {
 
     public AuthenticationResponse getAuthenticationResponse(String encryptedLocation) {
         return AuthenticationResponse.builder()
-                .firstIp("10.101.11.1")
+                .firstIp("http://localhost:8081/edge/data")
                 .secondIp("10.101.12.2")
                 .token(jwtTokenService.createToken())
                 .build();
